@@ -5,7 +5,7 @@ using namespace std;
 void permutate(string s, int l, int r) {
     //base case
     if(l == r)  
-        cout << s << endl;      //reached last char ie bottom row of tree
+        cout << s << endl;      //reached last char ie bottom row of treeab
 
     else {
         for(int i=l; i<=r; i++) {
@@ -16,6 +16,9 @@ void permutate(string s, int l, int r) {
     }
 }
 
+
+//total n! permutations, takes n time to print each
+// hence O(n * n!) complexity
 int main() {
     string str;
     cin >> str;
