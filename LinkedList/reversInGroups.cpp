@@ -40,7 +40,7 @@ Node *reverseK(Node *head, int k) {
     }
 
     if(next != NULL)        //for last group
-        head->next = reverseK(next, k);
+        head->next = reverseK(next, k);     //head is current group ka last wala; isko next group se connect krna hai
 
     return prev;
 }
