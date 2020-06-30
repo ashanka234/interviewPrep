@@ -22,7 +22,7 @@ int getMaxA(int n) {
     for(b=n-3; b>=1; b--) {
         int curr = (n-b-1) * getMaxA(b);        //if b is breakpoint, then repeating string is till n-b-1, and of length b 
                                                 //in the remaining n-b presses, we will just paste the same n-b times
-                                                //last 3 for select copy paste
+                                                //last 3 presses for select copy paste
         res = max(curr, res);                                       
     }
 
