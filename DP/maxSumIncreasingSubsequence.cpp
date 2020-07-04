@@ -5,7 +5,7 @@ int msis(int *arr, int n) {
     int maxSum = 0;
 
     int dp[n];      //IMP POINT - array operations wale ques mei humesha n size ka dp hota hai.
-                    //whereas in ques involving real things like money, rope, chain etc, humesha n+1 ka dp hoga
+                    //whereas in ques involving real things like substr length, money, rope, chain etc, humesha n+1 ka dp hoga
 
     for(int i=0; i<n; i++)      
         dp[i] = arr[i];
