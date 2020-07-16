@@ -34,7 +34,7 @@ int minSum(int *arr, int n) {
         }
     }
 
-    return diff;
+    return diff;        //the minimum difference between 2 subsets 
 }
 
 int main() {

@@ -25,7 +25,8 @@ int eggDrop(int n, int k) {
                 res = 1 + max(dp[i-1][x-1],         //egg break, so one egg less, one floor less
                               dp[i][j-x]);          //egg not break, so same no. of eggs, j-x floors left cuz iske neeche wale kisi 
                                                     //floor se nhi tutega
-                dp[i][j] = min(res, dp[i][j]);
+                                                    
+                dp[i][j] = min(res, dp[i][j]);      //we need to minimise steps including current step
             }
         }
     }

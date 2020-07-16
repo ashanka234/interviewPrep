@@ -15,7 +15,7 @@ struct Box {
 };
 
 bool myCompare(Box b1, Box b2) {
-    return ((b1.d*b1.w) > (b2.d*b2.w));     //sort in increasing order of base area
+    return ((b1.d*b1.w) > (b2.d*b2.w));     //sort in DECREASING order of base area
 }
 
 int  maxStackHeight(Box *arr, int n) {
@@ -45,7 +45,7 @@ int  maxStackHeight(Box *arr, int n) {
 
     //now we will only work w new rot array
     n = 3*n;
-    sort(rot, rot+n, myCompare);
+    sort(rot, rot+n, myCompare);            //V IMP - sort in decreasing order
 
     int dp[n];      //dp[i] represents the max height possible with i boxes
     for(int i=0; i<n; i++)
@@ -59,14 +59,6 @@ int  maxStackHeight(Box *arr, int n) {
             }
         }
     }
-
-   /* for(int i=0; i<n; i++)
-        cout << rot[i].h << " ";
-    cout << endl;
-
-    for(int i=0; i<n; i++)
-        cout << dp[i] << " ";
-    cout << endl; */
 
     for(int i=0; i<n; i++)
         res = max(res, dp[i]);
