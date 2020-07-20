@@ -28,10 +28,10 @@ bool isPossibleAllCharsSameFrequencyOneRemoval(string &str) {
         return true;
 
     for(auto it=mp.begin(); it!=mp.end(); it++) {
-        it->second--;
+        it->second--;       //try to remove this char once
         if(isAllSameFreq(mp))
             return true;
-        it->second++;
+        it->second++;       //if failed then put it back
     }
 
     return false;

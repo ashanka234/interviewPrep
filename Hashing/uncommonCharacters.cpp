@@ -6,7 +6,7 @@ using namespace std;
 
 void printUncommon(string s1, string s2) {
     unordered_map<char, int> mp;
-    set<char> res;
+    set<char> res;      //set will store only distinct characters, no repeats
 
     for(int i=0; i<s1.length(); i++) {
         mp[s1[i]]=1;        //this char is coming only in s1

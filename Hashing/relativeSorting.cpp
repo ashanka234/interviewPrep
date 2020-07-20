@@ -48,10 +48,6 @@ int main() {
     int n2 = sizeof(arr2) / sizeof(arr2[0]); 
 
     sortRelative(arr1, arr2, n1, n2);
-
-    /* for(int i=0; i<n1; i++)
-        cout << arr1[i] << " ";
-    cout << endl; */
-
+    
     return (0);
 }

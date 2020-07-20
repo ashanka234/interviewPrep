@@ -23,7 +23,8 @@ void findSwapPair(int *arr1, int *arr2, int m, int n) {
         sum2 += arr2[i];
 
     //cout << "sum1=" << sum1 << " sum2=" << sum2 << endl;
-    int diff = (sum1 - sum2)/2;
+    int diff = (sum1 - sum2)/2;     //because half of the difference will come from arr1 and half from arr2
+                                    //so while traversing arr2 we need to consider only half of the actual difference
     //cout << "diff=" << diff << endl;
     for(int  i=0; i<n; i++) {
         if(mp.find(arr2[i]+diff) != mp.end()) {

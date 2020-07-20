@@ -22,7 +22,7 @@ void sortByFreq(int *arr, int n) {
         freq[arr[i]]++;
     
     int s = freq.size();
-    cout << s << endl;
+    //cout << s << endl;
     //convert the map into array of pairs of <element, freq>
     pair<int, int> pairArr[s];
     int i = 0;
@@ -56,6 +56,10 @@ int main() {
         cin >> num;
         arr.push_back(num);
     } */
+
+    /* to use vector, while counting freq, put a check that if element not exist in map, then freq[arr[i]] = 1
+                                                                                        else freq[arr[i]]++ */
+                                                                                        
     int *arr =  new int[n];
     for(int i=0; i<n; i++)
         cin >> arr[i];

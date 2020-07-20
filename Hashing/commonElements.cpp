@@ -6,12 +6,14 @@ void printCommon(int *arr1, int *arr2, int *arr3, int n1, int n2, int n3) {
     map<int, int> freq;
 
     for(int i=0; i<n1; i++) {
-        if(freq[arr1[i]]==0)
+        if(freq.find(arr1[i]) == freq.end())
             freq[arr1[1]]++;
+        else
+            continue;
     }
 
     for(int i=0; i<n2; i++) {
-        if(freq[arr2[i]]!=0)
+        if(freq.find(arr2[i]) !=freq.end())
             freq[arr2[i]]++;
     }
 

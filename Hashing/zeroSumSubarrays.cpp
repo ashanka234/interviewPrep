@@ -23,11 +23,11 @@ vector<pair<int, int> > getSubarrays(int *arr, int n) {
             vector<int> vc = mp[sum];
 
             for(auto it=vc.begin(); it!=vc.end(); it++) {
-                res.push_back(make_pair(*it+1, i));
+                res.push_back(make_pair(*it+1, i));     //didnt understand this step
             }
         }
 
-        mp[sum].push_back(i);      //store the index till which its making the current sum
+        mp[sum].push_back(i);      //store all the indexes till which a subarray is making the current sum (starting can be anywhere)
     }
 
     return res;
