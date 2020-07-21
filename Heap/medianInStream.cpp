@@ -1,11 +1,13 @@
+/* Very commonly asked queston */
+
 #include<iostream>
 #include<queue>
 #include<vector>
 using  namespace std;
 
 void getMedians(double *arr, int n) {
-    priority_queue<double> s;       //max heap for smaller elements  - greatest will be on top
-    priority_queue<double, vector<double>, greater<double> > g;     //min heap for greater elements  -- smallest will be on top
+    priority_queue<double> s;       //min heap for smaller elements  - greatest will be on top
+    priority_queue<double, vector<double>, greater<double> > g;     //max heap for greater elements  -- smallest will be on top
 
     double median = arr[0];
     s.push(arr[0]);
