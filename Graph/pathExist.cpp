@@ -67,7 +67,8 @@ bool findPath(int mat[][N]) {
     Graph g(V);
 
 
-    //we will now convert the matrix into a graph
+    //we will now convert the matrix into a graph 
+    //this is the method to convert adjacency matrix into adjacency list form
     int k=1;
     for(int i=0; i<N; i++) {
         for(int j=0; j<N; j++) {

@@ -1,5 +1,5 @@
 /**
- * IMPORTANT NAME ALGO
+ * IMPORTANT NAME ALGO (but very easy)
  * floyd warshall - used to find all pairs shortest path
  * it is DP based algo for weighted directed graph
  * */
