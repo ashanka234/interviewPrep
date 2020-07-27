@@ -54,6 +54,7 @@ void MinHeap::insertKey(int k) {
     }
 }
 
+//change key value at index i to new_val
 void MinHeap::decreaseKey(int i, int new_val) {
     harr[i] = new_val;
     while(i!=0 && harr[parent(i)] > harr[i]) {
@@ -112,7 +113,7 @@ int main() {
     h.insertKey(15); 
     h.insertKey(5); 
     h.insertKey(4); 
-    h.insertKey(45); 
+    h.insertKey(45);        //3,4,5,15,45
 
     cout << h.extractMin() << endl;
     cout << h.getMin() << endl;
