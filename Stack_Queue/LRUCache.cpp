@@ -1,3 +1,5 @@
+/* VVVV IMP QUESTION - asked in Amazon and many companies directly as it is */
+
 #include<iostream>
 #include<list>
 #include<unordered_map>

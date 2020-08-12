@@ -3,7 +3,7 @@
 using namespace std;
 
 void sortedMerge(int *arr1, int *arr2, int m, int n) {
-    for(int i=n-1; i>=0; i--) {
+    for(int i=n-1; i>=0; i--) {     //for arr2
         int last = arr1[m-1];
         int j=m-2;
 
@@ -20,6 +20,10 @@ void sortedMerge(int *arr1, int *arr2, int m, int n) {
             arr2[i] = last;
         }
     }
+
+    //arr1 stores first m elements of full sorted merged array
+    //arr2 stores last n elements of full sorted merged array
+    //total size is m+n
 }
 
 int main() {

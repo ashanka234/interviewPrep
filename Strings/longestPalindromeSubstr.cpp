@@ -12,7 +12,7 @@ void printSubstr(string s, int i, int j) {
 int longestPalindromicSubstr(string str) {
     int n = str.length();
 
-    bool dp[n][n];      //dp[i][j] means substr from index i to j
+    bool dp[n][n];      //dp[i][j] means substr from index i to j is palindrome or not
     memset(dp, 0, sizeof(dp));
 
     int maxLen = 1;

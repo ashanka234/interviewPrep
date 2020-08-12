@@ -22,7 +22,7 @@ int minCost(int n, int p, int q) {
             }
             else
             {
-                cost += (temp*p);       //going from n to n/2 is same as adding 1, n/2 time
+                cost += (temp*p);       //going from n to n/2 is same as adding 1, n/2 times
             }
             n = n/2;
         }
@@ -49,9 +49,6 @@ int minOperations(int n) {
 
     return res;
 }
-
-#include<iostream>
-using namespace std;
 
 int main() {
     int n, p, q;

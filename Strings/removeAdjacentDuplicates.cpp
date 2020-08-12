@@ -42,6 +42,26 @@ char  *removeDuplicates(char *s) {
     return removeUtil(s, &last_removed);
 }
 
+
+//easy method using recursion in O(n^2)
+void removeAdjDuplicates(char *str) {
+    if(str[0] == '\0')
+        return;
+
+    if(str[0] == str[1]) {      //adj duplicate found
+        //shift left
+        int i=0;
+        while(str[i] != '\0') {
+            str[i] = str[i+1];
+            i++;
+        }
+        removeAdjDuplicates(str);
+    }
+
+    //if adj duplicate not found
+    removeAdjDuplicates(str+1);
+}
+
 int main() {
     char str[100];
     cin >> str;

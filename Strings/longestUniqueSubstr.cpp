@@ -42,7 +42,7 @@ int getLongestUniqueSubstr_1(string s) {
     //cout << "here 4\n";
     for(int j=0; j<n; j++) {        //ending of window
         //cout << "here 5\n";
-        i = max(i, lastIndex[s[j]]+1);      //+1 because we starting from -1
+        i = max(i, lastIndex[s[j]]+1);      //+1 because lenght is increasing by 1
 
         res = max(res, j-i+1);
         lastIndex[s[j]] = j;

@@ -6,7 +6,7 @@ using namespace std;
 int minDiff(int *arr, int n, int m) {
     int minDiff = INT_MAX;
 
-    if(n<m)     //no of kids can be more than no of chocolates
+    if(n<m)     //no. of kids cannot be more than no. of chocolates
         return -1;
 
     if(m==0 || n==0)
@@ -27,7 +27,7 @@ int main() {
     int *arr = new int[n];
 
     for(int i=0; i<n; i++)
-        cin >> arr[i];
+        cin >> arr[i];      //no. of chocolates in each packet
     cin >> m;
 
     cout << minDiff(arr, n, m) << endl;

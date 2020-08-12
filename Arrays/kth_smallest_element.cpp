@@ -6,7 +6,7 @@ using namespace std;
 
 //O(k + (n-k)logk)
 int getKthSmallest(int *arr, int n, int k) {
-    priority_queue<int, vector<int>, greater<int> > pq;     //max heap - O(k)
+    priority_queue<int, vector<int>, greater<int> > pq;     //max heap - O(k) - sabse chota wala sabse upar hai
 
     for(int i=0; i<n; i++)
         pq.push(arr[i]);

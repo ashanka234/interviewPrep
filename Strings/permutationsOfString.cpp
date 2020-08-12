@@ -5,7 +5,7 @@ using namespace std;
 void permutate(string s, int l, int r) {
     //base case
     if(l == r)  
-        cout << s << endl;      //reached last char ie bottom row of treeab
+        cout << s << endl;      //reached last char ie bottom row of tree
 
     else {
         for(int i=l; i<=r; i++) {

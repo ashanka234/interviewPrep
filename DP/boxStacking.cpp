@@ -51,7 +51,7 @@ int  maxStackHeight(Box *arr, int n) {
     for(int i=0; i<n; i++)
         dp[i] = rot[i].h;       //min  height can be height of each one individual box
 
-    for(int i=1; i<n; i++) {
+    for(int i=1; i<n; i++) {        //ith box is on top of jth box
         for(int j=0; j<i; j++) {
             //base area of lower one must be greater than the one on top of it
             if(rot[i].w<rot[j].w && rot[i].d<rot[j].d && dp[i]<dp[j]+rot[i].h) {

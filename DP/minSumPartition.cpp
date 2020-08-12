@@ -20,7 +20,8 @@ int minSum(int *arr, int n) {
             dp[i][j] = dp[i-1][j];      //exclude current element
 
             if(arr[i-1] <= j) {     //including current
-                dp[i][j] += dp[i-1][j-arr[i-1]];        //till previous element, sum was current sum minus current element
+                dp[i][j] |= dp[i-1][j-arr[i-1]];        //till previous element, sum was current sum minus current element
+                                                        // |= is same as +=, used in binary (as dp is of bool type)
             }
         }
     }

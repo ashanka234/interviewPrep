@@ -15,7 +15,7 @@ int knapsack(int W, int *weight, int *val, int n) {
                 dp[i][w] = max(val[i-1] + dp[i-1][w-weight[i-1]], dp[i-1][w]);      //basiaclly current wale ko leke maximimse ho rha hai ya nhi
             }
             else 
-                dp[i][w] = dp[i-1][w];
+                dp[i][w] = dp[i-1][w];      //esclude current 
         } 
     }
 

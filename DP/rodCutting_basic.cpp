@@ -14,7 +14,7 @@ int maxPrice(int *arr, int n) {
         dp[i] = INT_MIN;
 
         for(int j=0; j<i; j++) {
-            dp[i] = max(dp[i], dp[j] + arr[i-j-1]);     //if we cur j length, then (i-j) length left, -1 because of indexing
+            dp[i] = max(dp[i], dp[j] + arr[i-j-1]);     //if we cut j length, then (i-j) length left, -1 because of indexing
         }
     }
 

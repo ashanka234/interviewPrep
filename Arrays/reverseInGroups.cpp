@@ -13,6 +13,21 @@ void reverseK(int *arr, int n, int k) {
     }
 }
 
+
+//easy method using std::reverse() function
+void reverseInK(int *arr, int n, int k) {
+
+    for(int i=0; i+k-1<n; i++) {
+        reverse(arr+i, arr+i+k);
+        i += k-1;
+    }
+
+    //print result
+    for(int i=0; i<n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
 int main() {
     int t;
     cin >> t;

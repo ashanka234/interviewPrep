@@ -1,4 +1,5 @@
-/* matrix contains only 1 to n*n numbers
+/*  HIGH LEVEL QUES 
+    matrix contains only 1 to n*n numbers
     find max path len s.t numbers are in increasing continuous sequence */
 
 #include<iostream>

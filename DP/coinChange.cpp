@@ -6,7 +6,7 @@
 using namespace std;
 
 int coinChange(int coins[], int m, int sum) {
-    int dp[sum+1][m];       //dp[i][j] represents min no. of coins required to make i amount, using first j number of coins
+    int dp[sum+1][m];       //dp[i][j] represents  no. of ways to make i amount, using first j number of coins
     int x,y,i, j;
 
     for(int i=0; i<sum+1; i++) {

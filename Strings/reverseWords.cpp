@@ -36,7 +36,7 @@ int main() {
     char str[100];
     //cin >> str;
     cin.getline(str, 100);
-    //char str[] = "i love to do programming";
+    //char str[] = "i love to do code"; 
     reverseWords(str);
 
     cout << str << endl;

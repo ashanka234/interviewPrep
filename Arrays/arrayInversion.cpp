@@ -1,3 +1,5 @@
+/* we need to find number of pairs where arr[i]>arr[j] and i<j */
+
 #include<iostream>
 using namespace std;
 

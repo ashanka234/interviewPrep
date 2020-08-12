@@ -7,10 +7,10 @@
 using namespace std;
 
 int lis(int *arr, int n) {
-    int dp[n];
+    int dp[n];      //dp[i] represents length of max incr subsequence till index i in arr
 
     dp[0] = 1;      //least length  of subsequence can be 1 only
-    //dp[i] represents length of max incr subsequence till index i in arr
+    
 
     for(int i=1; i<n; i++) {
         dp[i] = 1;

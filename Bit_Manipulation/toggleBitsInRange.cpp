@@ -11,7 +11,7 @@ unsigned int toggleBits(unsigned int n, unsigned int l, unsigned int r) {
 }
 
 int main() {
-    unsigned int n, l, r;
+    unsigned int n, l, r;       //important to take UNSIGNED INT 
     cin >> n >> l >> r;
 
     cout << toggleBits(n, l, r) << endl;
